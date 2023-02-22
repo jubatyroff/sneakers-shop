@@ -7,7 +7,7 @@ different brands at
 competitive prices.
 
 
-> ## Tech Stack :-
+> ## Tech Stack :
 - EJS
 - Express
 - NodeJs
