@@ -1,0 +1,233 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+main{
+    min-height: 95vh;
+}
+
+.img-fluid{
+
+    top: -50px; /* adjust this value to crop more or less of the top */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navbar{
+    width:1600px;
+    z-index: 2;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.carousel-item img{
+    border-radius: 10px
+}
+
+
+.conatainer{
+    margin: auto;
+    width: 1300px;
+}
+
+
+section{
+    padding: 1rem ;
+}
+.home{
+    padding: 0;
+    position: relative;
+}
+.home .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 9%;
+    padding-top: 1rem;
+}
+.home .slide-container .slide .content{
+    flex: 1 1 40rem;
+    animation: slideContent .3s linear 1s backwards;
+    position: absolute;
+    margin-left: 420px;
+    margin-bottom: 400px;
+}
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+.home .slide-container .slide .image{
+    flex: 1 1 50rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 0;
+}
+.home .slide-container .slide .image .shoe{
+    width: 100%;
+    animation: shoe .3s linear;
+}
+@keyframes shoe{
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+}
+.home .slide-container .slide .content span{
+    font-size: 4rem;
+    color: white;
+}
+.home .slide-container .slide .content h3{
+    font-size: 5rem;
+    color: white;
+}
+.home .slide-container .slide .content p{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    padding: .5rem 0;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid #000;
+    color: #000;
+    cursor: pointer;
+    background: #fff;
+    padding: .3rem 1rem;
+}
+
+.home .slide-container{
+    display: none;
+}
+.home .slide-container.active{
+    display: block;
+}
+.home #prev,.home #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5.5rem;
+    font-size: 2rem;
+    color: #000;
+    border:.2rem solid #000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.home #prev:hover,.home #next:hover{
+    color: #fff;
+    background: orangered;
+}
+.home #prev{
+    left: 3rem;
+}
+.home #next{
+    right: 3rem;
+}
+
+
+.img-fluid-1{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+.image-port{
+    width:100%;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+body{
+    background-color: rgb(215, 224, 210);
+
+}
+#dp-pick{
+    border-radius: 50px;
+    margin:auto;
+}
+.td,th{
+    padding:5px;
+    text-align: left;
+}
+/* .actions .action-item{
+
+    text-decoration: none;
+    color: white;
+    border-radius:12px;
+
+
+} */
+.product-card{
+    margin:10px;
+
+    padding:0;
+    width:18rem;
+    border-radius: 12px;
+    box-shadow: 5px 10px 15px #b6b5b5;
+    transition: transform 0.4s ease-in-out;
+}
+.product-card:hover{
+    transform: scale(1.04);
+}
+
+
+.actions{
+    background: rgb(59, 110, 82);
+    margin-right: 30px;
+    border-radius:12px;
+    box-shadow: 5px 10px 15px #888888;
+    perspective: 300px;
+    transition: transform 0.5s ease-in-out;
+}
+.actions:hover{
+    background: rgb(131, 143, 137);
+    transform: scale(1.03);
+}
+.action-item{
+    font-size: 1.5em;
+    width:100%;
+
+}
+.action-item a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* .actions .action-item a,#createNewButton a{
+    text-decoration: none;
+    color: white;
+    font-size:1.5rem;
+} */
+/* #createNewButton{
+    font-size:1.2rem;
+} */
+
+.accordion-item{
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+
+.res-width{
+    width:55%;
+}
+
+@media only screen and (max-width: 789px) {
+    .res-width{
+        width:95%;
+    }
+
+}
