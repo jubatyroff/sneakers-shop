@@ -1,4 +1,4 @@
-# "WALKING" SNAEKERS SHOW
+# "WALKING" SNAEKERS SHOP
 
 "WalKing" is an E-commerce application built with CRUD functionality, and REST architechture. Online shop-website
 where you will find different
